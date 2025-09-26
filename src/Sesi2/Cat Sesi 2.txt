@@ -1,0 +1,11 @@
+Singleton
+- Eager Singleton
+  Dibikin dari awal
+
+- Lazy Singleton
+  Cmn dibikin instancenya pas dibutuhkan doank
+
+- Threadsafe Singleton
+  Sama kek Lazy Singleton, cuma pakai tambahan keyword "synchronized" ke getInstance
+
+Factory
