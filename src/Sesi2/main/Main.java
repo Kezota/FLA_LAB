@@ -16,9 +16,16 @@ public class Main {
 		
 		MenuItem pizza = factory.getFood("pizza", "spicy", 50000);
 		MenuItem pasta = factory.getFood("pasta", "ori", 30000);
-		
-		pizza.isCooking();
-		pasta.isCooking();
+
+		db1.addMenuItem(pizza);
+		db1.addMenuItem(pasta);
+
+		for(MenuItem item : db2.getMenuItems()) {
+			item.isCooking();
+		}
+
+//		pizza.isCooking();
+//		pasta.isCooking();
 	}
 	
 	public static void main(String[] args) {

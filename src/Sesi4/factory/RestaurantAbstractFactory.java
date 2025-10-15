@@ -4,7 +4,7 @@ import Sesi4.model.Drink;
 import Sesi4.model.MainCourse;
 
 public abstract class RestaurantAbstractFactory {
+    // abstract method
     public abstract MainCourse createMainCourse();
-
     public abstract Drink createDrink();
 }

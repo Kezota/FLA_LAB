@@ -1,5 +1,12 @@
 package Sesi3.builder;
 
+// FLA LAB -> Creational Pattern:
+// 1. Singleton -> class yang hanya bisa dibuat sekali
+// 2. Factory Method -> class yang membuat class lain
+// 3. Abstract Factory -> class yang membuat factory method lain
+// 4. Builder -> class yang membuat class lain dengan banyak atribut
+// 5. Prototype -> class yang membuat class lain dengan cara clone
+
 import Sesi3.model.GameCharacter;
 
 public class GameCharacterBuilder {

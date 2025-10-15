@@ -1,8 +1,12 @@
 package Sesi2.singleton;
 
+import Sesi2.factory.MenuItem;
+
+import java.util.Vector;
+
 public class Database {
 
-	// Eager Singleton = Lgsg dibikin di awal
+	// Eager Singleton = Lgsg dibikin di awal -> YG DIPAKE DI QUIZ INI
 //	private static final Database instance = new Database();
 //	
 //	public Database() {
@@ -27,6 +31,7 @@ public class Database {
 	
 	// Threadsafe Singleton
 	private static Database instance;
+	private Vector<MenuItem> menuItems;
 	
 	public static synchronized Database getInstance() {
 		if(instance == null) {
@@ -34,5 +39,17 @@ public class Database {
 		}
 		return instance;
 	}
-	
+
+	private Database() {
+		menuItems = new Vector<MenuItem>();
+		System.out.println("Database is Connected");
+	}
+
+	public void addMenuItem(MenuItem item) {
+		menuItems.add(item);
+	}
+
+	public Vector<MenuItem> getMenuItems() {
+		return menuItems;
+	}
 }

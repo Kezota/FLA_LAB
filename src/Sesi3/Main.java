@@ -40,7 +40,7 @@ public class Main {
 //        GameCharacter char4 = builder.addName("Wizard").build();
 //        char4.print();
 
-        // clone way
+        // Prototype -> cloning
 //        GameCharacter char5 = null;
         GameCharacter char5 = null;
         try {
